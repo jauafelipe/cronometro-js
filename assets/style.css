@@ -1,0 +1,97 @@
+/* Imports */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&display=swap');
+
+
+
+* {
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d23131;
+
+}
+
+.circle {
+    position: absolute;
+    z-index: -1;
+    width: 300px;
+    border-radius: 10%;
+    top: 12rem;
+    height: 290px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 20px 2px rgba(0, 0, 0, 0.600);
+}
+
+
+.title {
+    margin-bottom: .6rem;
+}
+
+.title h1 {
+    letter-spacing: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: .8rem;
+    background: linear-gradient(-120deg, rgba(24, 22, 22, 10) 5%, #d23131 100%, rgba(210,49,49,1) 100%);
+    width: 500px;
+    height: 250px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.600);
+}
+
+
+.container p {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fafafa;
+}
+
+.title h1::after {
+    content: '';
+    display: block;
+    border: 1px solid #000000;
+    box-shadow: 1px 1px 10px 2px rga(0, 0, 0, 0.500);
+}
+
+/* Buttons */
+
+
+.buttons {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.buttons .btn {
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: #d23131;
+    color: #fafafa;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: .8s;
+}
+
+.buttons .btn:hover {
+    transform: scale(1.1);
+    opacity: .5;
+}
